@@ -31,7 +31,6 @@ Server(int port)
 public void startServer() throws IOException {
         server=new ServerSocket(3000);
         System.out.println("Server Booted");
-        System.out.println("Any client can stop the server by sending -1");
         while(true)
         {
             client=server.accept();
